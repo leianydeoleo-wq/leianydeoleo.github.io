@@ -316,13 +316,6 @@
   </section>
 </div>
 
-<footer class="wrap">
-  <span>© <span id="year"></span> Leiany De Oleo Rodriguez</span>
-  <div class="rule"></div>
-  <a href="#" id="githubLink2">GitHub</a>
-  <a href="#" id="linkedinLink2">LinkedIn</a>
-  <a href="mailto:ldeoleo@asu.edu">ldeoleo@asu.edu</a>
-</footer>
 
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
@@ -330,14 +323,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 /* -----------------------------------------------------------------
    EDIT ME: swap placeholder links for your real ones.
 ------------------------------------------------------------------ */
-const LINKS = {
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
-  cv: "resume.pdf"
-};
-["githubLink","githubLink2"].forEach(id => document.getElementById(id).href = LINKS.github);
-["linkedinLink","linkedinLink2"].forEach(id => document.getElementById(id).href = LINKS.linkedin);
-document.getElementById('cvLink').href = LINKS.cv;
+
 
 /* -----------------------------------------------------------------
    RESEARCH PROJECTS
