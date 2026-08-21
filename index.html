@@ -305,9 +305,24 @@
     </div>
   </section>
 
- 
+  <section id="awards">
+    <h2 class="section-title">Awards &amp; Extracurriculars</h2>
+    <ul class="awards-list">
+      <li><b>Citizen Science Volunteer</b>, NASA Dark Energy Explorers — June 2026–Present</li>
+      <li><b>Secretary</b>, Astronomy Club at ASU — January 2024–August 2025</li>
+      <li><b>Moderator</b>, XRISM NASA/JAXA Science Meeting #7 — Arizona State University, February 2025</li>
+      <li><b>Dean's List</b>, Fall 2025 &amp; Spring 2026 — College of Liberal Arts and Sciences, ASU</li>
+    </ul>
+  </section>
 </div>
 
+<footer class="wrap">
+  <span>© <span id="year"></span> Leiany De Oleo Rodriguez</span>
+  <div class="rule"></div>
+  <a href="#" id="githubLink2">GitHub</a>
+  <a href="#" id="linkedinLink2">LinkedIn</a>
+  <a href="mailto:ldeoleo@asu.edu">ldeoleo@asu.edu</a>
+</footer>
 
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
@@ -315,7 +330,14 @@ document.getElementById('year').textContent = new Date().getFullYear();
 /* -----------------------------------------------------------------
    EDIT ME: swap placeholder links for your real ones.
 ------------------------------------------------------------------ */
-
+const LINKS = {
+  github: "https://github.com/yourusername",
+  linkedin: "https://linkedin.com/in/yourusername",
+  cv: "resume.pdf"
+};
+["githubLink","githubLink2"].forEach(id => document.getElementById(id).href = LINKS.github);
+["linkedinLink","linkedinLink2"].forEach(id => document.getElementById(id).href = LINKS.linkedin);
+document.getElementById('cvLink').href = LINKS.cv;
 
 /* -----------------------------------------------------------------
    RESEARCH PROJECTS
